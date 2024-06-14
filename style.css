@@ -32,7 +32,7 @@ html, body {
     color: white;
 }
 
-.movie-search{
+#movie-search{
     position: relative;
     bottom: 30px;
     z-index: 1;
