@@ -64,3 +64,9 @@ input{
     color: gray;
     cursor: pointer;
 }
+
+.rendered-movies-container{
+    display: flex;
+    color: black;
+    font-weight: 400;
+}
