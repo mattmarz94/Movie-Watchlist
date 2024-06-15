@@ -67,6 +67,18 @@ input{
 
 .rendered-movies-container{
     display: flex;
+    padding: 1em;
     color: black;
     font-weight: 400;
+}
+
+.rendered-movies-container img{
+    height: 350px;
+}
+
+.title-container,
+.time-genre-add-container,
+.movie-plot-container {
+    display: flex;
+    align-items: center;
 }
