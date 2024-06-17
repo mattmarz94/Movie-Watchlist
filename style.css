@@ -65,17 +65,23 @@ input{
     cursor: pointer;
 }
 
-
-
 .rendered-movies-container{
     display: flex;
-    padding: 1em;
+    padding: 1em 5em;
     color: black;
     font-weight: 400;
 }
 
+hr{
+    margin: 0 5em;
+}
+
 .rendered-movies-container img{
-    height: 350px;
+    height: 300px;
+}
+
+.movie-container{
+    margin: 0 1em;
 }
 
 .title-container,
@@ -84,3 +90,20 @@ input{
     display: flex;
     align-items: center;
 }
+
+.title-container h2{
+    padding-right: .5em;
+    font-size: 1.5rem;
+}
+
+.title-container i{
+    color: gold;
+    font-size: .9rem;
+    padding-right: .2em;
+}
+
+.title-container p{
+    font-size: .9rem;
+    max-width: 50ch;
+}
+

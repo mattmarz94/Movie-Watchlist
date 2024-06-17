@@ -36,7 +36,8 @@ function handleUserInput(movies){
                             <p class="movie-plot">${movieDetails.Plot}</p>
                         </div>
                     </div>
-                </div
+                </div>
+                <hr/>
                 `
             
             })
