@@ -23,13 +23,13 @@ function handleUserInput(movies){
                     <div class="movie-container">
                         <div class="title-container">
                             <h2>${movieDetails.Title}</h2>
-                            <p>Star goes here</p>
+                            <i class="fa-solid fa-star"></i>
                             <p class="movie-rating">${movieDetails.imdbRating}</p>
                         </div>
                         <div class = "time-genre-add-container">
                             <p class ="movie-runtime">${movieDetails.Runtime}</p>
                             <p class ="movie-genre">${movieDetails.Genre}</p>
-                            <p>Add the Watchlist FONT AWESOME ICON</p>
+                            <i class="fa-solid fa-circle-plus"></i>
                             <p class="watchlist">Watchlist</p>
                         </div>
                         <div class ="movie-plot-container">

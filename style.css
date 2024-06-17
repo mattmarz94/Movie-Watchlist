@@ -65,6 +65,8 @@ input{
     cursor: pointer;
 }
 
+
+
 .rendered-movies-container{
     display: flex;
     padding: 1em;
