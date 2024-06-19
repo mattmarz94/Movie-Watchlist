@@ -107,3 +107,20 @@ hr{
     max-width: 50ch;
 }
 
+.time-genre-add-container{
+    font-size: 1.2rem;
+}
+
+.time-genre-add-container p{
+    padding-right: 1em;
+}
+
+.time-genre-add-container i{
+    padding-right: .2em;
+    cursor: pointer;
+}
+
+.movie-plot-container{
+    font-size: 1.2rem;
+    color: rgb(90, 89, 89);
+}
