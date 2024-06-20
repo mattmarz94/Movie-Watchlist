@@ -2,9 +2,10 @@
 const searchBtn = document.getElementById("search-btn")
 const movieFormInput = document.querySelector("#movie-search")
 const renderedMoviesHtml = document.querySelector('.rendering-movies-container')
+const renderedWatchlistHtml = document.getElementById("watchlist-rendered-movies-container")
 
 let moviesArray = []
-let watchlistArray = []
+let myWatchlistArr = []
 
 renderedMoviesHtml.addEventListener('click', (e) => {
     if(e.target.dataset.watchlist){
@@ -62,13 +63,27 @@ function renderMovies(){
 
 }
 
-function addToWatchlist(watchlist){
-    let stringWatchlist = JSON.stringify(watchlist)
-    console.log(stringWatchlist)
+function addWatchlist(watchlistId){
+    for (let movie of moviesArray){
+        if(movie.movieImdbID === watchlistId){
+            if(!myWatchlistArr.some((m)=>{
+                return m.Movies === movie.Movies
+            })){
+                myWatchlistArr,push(movie)
+                addToWatchlist()
+            }
+            else{
+                alert("This movie is already added to your watchlist!")
+            }
+        }
+    }
 
-
-    // localStorage.setItem("My Watchlist", JSON.stringify(watchlist))
 }
+
+function addToWatchlistStorage(){
+    localStorage.setItem("My Watchlist", JSON.stringify(myWatchlistArr))
+}
+
 
 
 if (movieFormInput){
