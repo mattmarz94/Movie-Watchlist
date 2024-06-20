@@ -4,9 +4,11 @@ const movieFormInput = document.querySelector("#movie-search")
 const renderedMoviesHtml = document.querySelector('.rendering-movies-container')
 
 let moviesArray = []
+let watchlistArray = []
 
-document.addEventListener('click', (e) => {
+renderedMoviesHtml.addEventListener('click', (e) => {
     if(e.target.dataset.watchlist){
+        e.preventDefault()
         addToWatchlist(e.target.dataset.watchlist)
     }
 })
@@ -26,6 +28,8 @@ async function handleUserInput(movies){
     }
     renderMovies()
 }
+
+
 
 function renderMovies(){
     let moviesHtml = ""
@@ -58,14 +62,13 @@ function renderMovies(){
 
 }
 
-// function addToWatchlist(myWatchlist){
+function addToWatchlist(watchlist){
+    let stringWatchlist = JSON.stringify(watchlist)
+    console.log(stringWatchlist)
 
-//     let stringWatchlist = JSON.stringify(myWatchlist)
-//     console.log(stringWatchlist)
 
-
-//     // localStorage.setItem("My Watchlist", JSON.stringify(myWatchlist))
-// }
+    // localStorage.setItem("My Watchlist", JSON.stringify(watchlist))
+}
 
 
 if (movieFormInput){
