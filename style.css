@@ -65,6 +65,28 @@ input{
     cursor: pointer;
 }
 
+/* Movie Icon & Message */
+
+.spacing-main{
+    height: 500px;
+}
+
+.spacing-main #movie-icon{
+    font-size: 10rem;
+    padding-top: 1em;
+}
+
+.welcome-msg{
+    font-size: 3rem;
+}
+
+.welcome-msg,
+.spacing-main #movie-icon{
+    display: flex;
+    justify-content: center;
+    color:#DFDDDD;
+}
+
 .rendered-movies-container{
     display: flex;
     padding: 1em 5em;
@@ -123,4 +145,14 @@ hr{
 .movie-plot-container{
     font-size: 1.2rem;
     color: rgb(90, 89, 89);
+}
+
+.err-message{
+    display: flex;
+    font-size: 3rem;
+    color: #DFDDDD;
+    text-align: center;
+    align-items: center;
+    height: 400px;
+    padding: 3em;
 }
