@@ -142,7 +142,6 @@ function updateWatchlistStorage(){
 }
 
 
-
 if (movieFormInput){
     movieFormInput.addEventListener('submit', async (e) => {
         e.preventDefault(e)
@@ -156,10 +155,8 @@ if (movieFormInput){
     })
 }
 
-document.addEventListener("DOMContentLoaded", () => {
     const watchlistMovies = localStorage.getItem("watchlist")
     if(watchlistMovies){
         myWatchlist = JSON.parse(watchlistMovies)
         renderWatchlist()
     }
-})

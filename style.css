@@ -87,6 +87,32 @@ input{
     color:#DFDDDD;
 }
 
+.local-storage{
+    color: #DFDDDD;
+    margin-bottom: 0;
+    padding-top: 5em;
+}
+
+.local-storage,
+.local-storage-add{
+    text-align: center;
+    font-size: 2em;
+}
+
+.local-storage-add .fa-solid{
+    padding-right: .2em;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
 .rendered-movies-container{
     display: flex;
     padding: 1em 5em;
