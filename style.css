@@ -10,7 +10,7 @@ html, body {
 }
 
 .nav-container{
-    height: 300px;
+    height: 200px;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("images/movie-posters.png");
     background-position: 0 20%;
     background-repeat: no-repeat;
@@ -23,13 +23,14 @@ html, body {
 }
 
 .find-film{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .my-watchlist{
     font-weight: bold;
     text-decoration: none;
     color: white;
+    font-size: .75rem;
 }
 
 #movie-search{
@@ -68,16 +69,16 @@ input{
 /* Movie Icon & Message */
 
 .spacing-main{
-    height: 500px;
+    height: 300px;
 }
 
 .spacing-main #movie-icon{
-    font-size: 10rem;
+    font-size: 5rem;
     padding-top: 1em;
 }
 
 .welcome-msg{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .welcome-msg,
@@ -87,10 +88,14 @@ input{
     color:#DFDDDD;
 }
 
+.spacing-main{
+    height: 300px;
+}
+
 .local-storage{
     color: #DFDDDD;
     margin-bottom: 0;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 .local-storage,
@@ -118,6 +123,7 @@ a{
     padding: 1em 5em;
     color: black;
     font-weight: 400;
+    height: 200px;
 }
 
 hr{
@@ -125,7 +131,8 @@ hr{
 }
 
 .rendered-movies-container img{
-    height: 300px;
+    height: 100%;
+    min-width: 120px;
 }
 
 .movie-container{
@@ -141,22 +148,22 @@ hr{
 
 .title-container h2{
     padding-right: .5em;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .title-container i{
     color: gold;
-    font-size: .9rem;
+    font-size: .65rem;
     padding-right: .2em;
 }
 
 .title-container p{
-    font-size: .9rem;
+    font-size: .65rem;
     max-width: 50ch;
 }
 
 .time-genre-add-container{
-    font-size: 1.2rem;
+    font-size: .75rem;
 }
 
 .time-genre-add-container p{
@@ -165,11 +172,12 @@ hr{
 
 .time-genre-add-container i{
     padding-right: .2em;
+    font-size: .7rem;
     cursor: pointer;
 }
 
 .movie-plot-container{
-    font-size: 1.2rem;
+    font-size: .75rem;
     color: rgb(90, 89, 89);
 }
 

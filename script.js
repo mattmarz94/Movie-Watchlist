@@ -81,8 +81,8 @@ function renderWatchlist(){
                 <div class = "time-genre-add-container">
                     <p class ="movie-runtime">${movie.Runtime}</p>
                     <p class ="movie-genre">${movie.Genre}</p>
-                    <i class="fa-solid fa-circle-plus" data-remove="${movie.imdbID}"></i>
-                    <p class="watchlist">Watchlist</p>
+                    <i class="fa-solid fa-square-minus" data-remove="${movie.imdbID}"></i>
+                    <p class="watchlist">Remove</p>
                 </div>
                 <div class ="movie-plot-container">
                     <p class="movie-plot">${movie.Plot}</p>
